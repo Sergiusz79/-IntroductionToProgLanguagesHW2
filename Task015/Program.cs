@@ -5,4 +5,14 @@
 // 7 -> да
 // 1 -> нет
 
+Console.WriteLine("Please enter number of day ");
+int.TryParse(Console.ReadLine(), out int a);
 
+if ( a == 6 | a == 7)
+{
+    Console.WriteLine("!!!This day is weekend!!!");
+}
+else
+{
+Console.WriteLine("This day is not weekend :(((");
+}
