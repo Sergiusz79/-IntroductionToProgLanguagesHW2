@@ -9,6 +9,12 @@ Console.WriteLine("Please enter number ");
 int.TryParse(Console.ReadLine(), out int a);
 
 int n = (int) Math.Log10(a);
-int c = a / (int) Math.Pow(10, n-1) % 10;
-
-Console.WriteLine($"The second digit is {c} ");
+if ( n > 1 )
+{
+    int c = a / (int) Math.Pow(10, n-2) % 10;
+    Console.WriteLine($"The third digit is {c} ");
+}
+else
+{
+Console.WriteLine("No third digit");
+}
